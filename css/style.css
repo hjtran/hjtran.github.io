@@ -39,3 +39,34 @@ body {
 .nav a:hover {
     color: #2cbb33;
 }
+
+.main {
+    width: 550px;
+    float: left;
+}
+
+.post h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.postDate {
+    color: #777;
+    border-bottom: 3px double #ccc;
+}
+
+.sidebar {
+    margin-top: 90px;
+    width: 180px;
+    float: right;
+}
+
+.sideTitle {
+    display:block;
+    border-bottom: 1px solid #222;
+}
+
+.sideTitle ul{
+    list-style-position: inside;
+    padding-left: none;
+}
