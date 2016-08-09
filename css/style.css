@@ -1,0 +1,41 @@
+
+body {
+    margin: 0px;
+}
+
+.container {
+    margin: auto;
+    width: 750px;
+}
+
+.header {
+    height: 100px;
+    background: #3E474F;
+    padding: 15px 0% 5px 0%;
+}
+
+.blogTitle {
+    color: #fff;
+    font-size: 48px;
+}
+
+.blogTagline {
+    color: #2cbb33;
+    font-size: 24px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    position: relative;
+    top: 8px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.nav a:hover {
+    color: #2cbb33;
+}
