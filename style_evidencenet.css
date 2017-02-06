@@ -1,0 +1,301 @@
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#cy {
+  position: absolute;
+  left: 0;
+  top: 1.3em;
+  bottom: 0;
+  right: 17em;
+  width: 85%;
+  background: #fff;
+}
+
+#config {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 15%;
+  background: #ddd;
+  box-sizing: border-box;
+  padding: 1em;
+  color: #000;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 1.3em;
+  right: 0;
+  width: 85%;
+  font-size:12pt;
+  z-index:12;
+  height:0px;
+  overflow:visible;
+  background:none !important;
+  z-index: 99999;
+
+}
+
+#footer {
+  position: fixed;
+  bottom: 1px;
+  width: 14em;
+  right: 0;
+  background: #ddd;
+  box-sizing: border-box;
+  padding: 1em;
+  color: #111;
+font-size:8pt;
+}
+
+.param {
+  margin-bottom: 0.25em;
+}
+
+.preamble {
+  margin-bottom: 0em;
+}
+
+p {
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+
+.param checkbox {
+  margin-right: 0.25em;
+}
+ 
+.param longbutton {
+  width: 7.6em;
+  margin-right: 0.25em;
+}
+
+.param button {
+  width: 4.5em;
+  margin-right: 0.25em;
+}
+
+.param f3button {
+  width: 4.5em;
+  margin-right: 0.25em;
+}
+a,
+a:link {
+    color: blue;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: red;
+}
+a.classa:link {
+    color: blue;
+}
+a.classa:visited {
+    color: pink;
+}
+a.classa:hover {
+    color: hotpink;
+}
+a.classa:active {
+    color: red;
+}
+a.classb:link {
+    color: red;
+}
+a.classb:visited {
+    color: lightred;
+}
+a.classb:hover {
+    color: hotpink;
+}
+a.classb:active {
+    color: red;
+}
+
+.label {
+  display: inline-block;
+}
+
+f3button,
+f3button:disabled {
+    background: #dddddd;
+} 
+.ui-tooltip, .qtip {
+max-width: 280px; /* Change this? */
+min-width: 50px; /* ...and this! */
+}
+.pbtn {
+    margin: 0px 15px;
+}
+
+/* evidence window styling */
+#close_btn {
+	float: right;
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: relative;
+	right: -10px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	z-index: 31;
+	opacity: 1;
+}
+
+#close_btn:hover { background: #00d9ff; }
+
+#evi_box_frame {
+	border-radius: 25px;
+	background: #eee;
+	border: 4px solid #ccc;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 9999999;
+}
+#evi_box {
+	height: 35vh;
+	width: 30vw;
+	max-width: 80vw;
+	resize: both;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#evi_box > table {
+	margin: 0px 5px 5px 10px;
+}
+#evi_table {
+	width: 100%;
+}
+#evi_table th {
+	text-align: left;
+}
+#evi_table th {
+	color: white;
+	background-color: black;
+}
+#evi_box table tr td {
+	font-size: 12px;
+}
+#evi_table td:nth-child(1) {
+	width: 70px;
+}
+#evi_table td:nth-child(2) {
+	width: 70px;
+}
+#evi_table td:nth-child(3) {
+	word-wrap: break-word;
+}
+#evi_table td:nth-child(4) {
+	width: 27px;
+}
+
+/* evidence type styles and colors */
+.e_row:nth-child(even){
+	background-color: rgb(0, 255, 153);
+}
+.e_row:nth-child(odd){
+	background-color: rgb(51, 255, 173);
+}
+.d_row:nth-child(even){
+	background-color: rgb(102, 204, 255);
+}
+.d_row:nth-child(odd){
+	background-color: rgb(153, 221, 255);
+}
+.t_row:nth-child(even){
+	background-color: rgb(204, 179, 255);
+}
+.t_row:nth-child(odd){
+	background-color: rgb(170, 128, 255);
+}
+.c_row:nth-child(even){
+	background-color: rgb(255, 166, 77);
+}
+.c_row:nth-child(odd){
+	background-color: rgb(255, 166, 77);
+}
+.f_row:nth-child(even){
+	background-color: rgb(255, 102, 102);
+}
+.f_row:nth-child(odd){
+	background-color: rgb(255, 102, 102);
+}
+.n_row:nth-child(even){
+	background-color: rgb(255, 255, 102);
+}
+.n_row:nth-child(odd){
+	background-color: rgb(255, 255, 102);
+}
+
+/* qtip styling */
+.qtip-content table{
+	cellpadding: 2px;
+}
+
+/* override bootstrap slider style */
+.slider.slider-horizontal {
+	width: 95%;
+}
+
+/* slider style */
+.slider_text {
+	color: rgb(0, 153, 0);
+	float: right;
+}
+
+/* Tooltip container */
+.tooltip2 {
+	position: relative;
+}
+
+/* Tooltip text */
+.tooltip2 .tooltiptext {
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Position the tooltip text  */
+	position: absolute;
+    bottom: 100%;
+	left: 105%; 
+	margin-left: -60px;
+	z-index: 11;
+	visibility: hidden;
+	padding: 5px;
+	font-size: 12px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip2:hover .tooltiptext {
+	    visibility: visible;
+}
