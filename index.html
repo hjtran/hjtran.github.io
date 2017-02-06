@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <title>EDDY-CTRP: Mediator Table</title>
+        <!-- DataTables.net external Style Sheet Modified -->
+        <link rel="stylesheet" type="text/css" href="res/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="res/css/buttons.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="res/css/table.css">
+        <link rel='shortcut icon' type='image/x-icon' href='res/img/favicon.ico'/>
+        <link rel='icon' type='image/x-icon' href='res/img/favicon.ico'/>
+        <script src="res/lib/jquery-1.12.3.min.js"></script>
+        <script src="res/lib/jquery.dataTables.min.js"></script>
+        <script src="res/lib/dataTables.buttons.min.js"></script>
+        <script src="res/lib/buttons.flash.min.js"></script>
+        <script src="res/lib/jszip.min.js"></script>
+        <script src="res/lib/pdfmake.min.js"></script>
+        <script src="res/lib/vfs_fonts.js"></script>
+        <script src="res/lib/buttons.html5.min.js"></script>
+        <script src="res/lib/buttons.print.min.js"></script>
+        <script src="res/lib/range-regex.js"></script>
+		<script>
+			function ExportURLBtn() {
+				var url = location.href;
+				if (url.indexOf('?')!=-1) {
+					url = url.substr(0,url.indexOf('?'));
+				}
+                var filter_columns = { 0:'no', 
+                                        1:'drugname',
+                                        2:'brdid',
+                                        3:'intended',
+                                        4:'protein',
+                                        5:'pathway',
+                                        6:'alpha',
+                                        7:'mediator',
+										8:'type',
+										10:'mindist'}
+
+				url += '?';
+                for (var i = 0; i < 11; i++) {
+					var filtText = $("[data_col=" + i + ']').val();
+					if (filtText != '' && typeof filtText!='undefined') {
+						url += filter_columns[i]+'='+filtText+'&';
+					}
+                }
+				  window.prompt("URL links back to this same table with the same filters:", url);
+		  }
+
+            $(document).ready(function(){
+                // Setup - add a text input to each footer cell and add attributes for col_filter selection
+                $('#t01 tfoot th').each( function (index,element) {
+                    var title = $(this).text();
+                    var i = index
+                    $(this).html( '<input type="text" class="col_filter" placeholder="'+title+'" data_col="'+index+'" />' );
+                } );
+
+                $('#alpha_filter_footer input').replaceWith('<select data_col="6" id="alpha_filter"> \n' + 
+                    '<option value="">Alpha</option> \n' + 
+                    '<option value="0.05">0.05</option> \n' + 
+                    '<option value="0.01">0.01</option> \n' + 
+                    '<option value="0.005">0.005</option> \n' + 
+                    '<option value="0.001">0.001</option> \n' + 
+					'</select>');
+
+                $('#mindist_filter_footer input').replaceWith('<select data_col="10" id="mindist_filter""> \n' + 
+                    '<option value="">Min Dist</option> \n' + 
+                    '<option value="mindist=.*1">1</option> \n' + 
+                    '<option value="mindist=.*2">2</option> \n' + 
+                    '<option value="mindist=.*3">3</option> \n' + 
+                    '<option value="mindist=.*4">4</option> \n' + 
+					'</select>');
+
+
+                function filterColumn ( ele ) {
+                    var idx = $(ele).attr('data_col');
+                    var val = $(ele).val().replace(/,/g,'|');
+                    if (idx == 0 && val != '') {
+						var newvals = [];
+                        var vals = val.split('|');
+                        for (var i = 0; i < vals.length; i++) {
+                            var range = vals[i].split('-');
+                            if (range.length == 2 &&
+                            !isNaN(parseInt(range[0])) &&
+                            !isNaN(parseInt(range[1])) ) {
+                                var lwr_bnd = parseInt(range[0]);
+                                var upr_bnd = parseInt(range[1]);
+                                newvals.push( split_to_patterns( lwr_bnd, upr_bnd ) );
+							}
+							else if (range.length == 1 && !isNaN(parseInt(range[0])) ){
+								newvals.push(range);
+							}
+                        }
+                        vals = [];
+                        for (var i = 0; i < newvals.length; i++) {
+                            vals.push( newvals[i].join('|') );
+                        }
+                        val = '^(' + vals.join('|') + ')$';
+                    }
+
+                    table.column( idx ).search(
+                    val,
+                    true,
+                    false
+                    ).draw();
+                }
+
+                function filterGlobal () {
+                    table.search(
+                    $('#global_filter').val().replace(',','|'),
+                    true,
+                    false)
+                    .draw();
+                };
+
+                //hide these search boxes 
+                $(".hide").empty();
+
+				// Define function to strip out text used for alpha filtering
+				var buttonCommon = {
+					exportOptions: {
+						format: {
+							body: function ( data, column, row, node ) {
+								// Strip filt text out
+								return data.replace( /<span class[^>]+>[^>]+>/g, '').replace(/<[^>]+>/g, '') ;
+							}
+						}
+					}
+				};
+
+				jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+					"scientific-pre": function ( a ) {
+						return parseFloat(a);
+					},
+				 
+					"scientific-asc": function ( a, b ) {
+						return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+					},
+				 
+					"scientific-desc": function ( a, b ) {
+						return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+					}
+				} );
+
+                // Initialize DataTable
+                var table = $('#t01').DataTable({
+                    "ajax" : "table_data/mediator.json",
+					"deferRender" : true,
+				  "columnDefs": [
+				  { "orderable": false, "targets": [9,10,11] },
+				  { type: "scientific", "targets": 6}
+						],
+					buttons: [
+						$.extend( true, {}, buttonCommon, {
+							extend: 'copy'
+						} ),
+						$.extend( true, {}, buttonCommon, {
+							extend: 'csv'
+						} ),
+						$.extend( true, {}, buttonCommon, {
+							extend: 'excel'
+						} ),
+						$.extend( true, {}, buttonCommon, {
+							extend: 'pdf'
+						} ),
+						$.extend( true, {}, buttonCommon, {
+							extend: 'print'
+						} )
+						],
+						"aaSorting": [],
+                    dom: 'Bfrtip',
+                    'initComplete': function(settings, json) {
+
+                // Load parameters from url
+                var parameters = location.href.substr( location.href.indexOf('?')+1)
+                parameters = parameters.split('&')
+                var filter_columns = { 'no':0, 
+                                        'drugname':1,
+                                        'brdid':2,
+                                        'intended':3,
+                                        'protein':4,
+                                        'pathway':5,
+                                        'alpha':6,
+                                        'mediator':7,
+										'type':8,
+										'mindist':10}
+                for (var i = 0; i < parameters.length; i++) {
+					var split = parameters[i].split('=');
+					split[1] = split.slice(1).join('=');
+					if (split.length >= 2){
+                        if (split[0] in filter_columns) {
+                            $("[data_col=" + filter_columns[split[0]] + ']').val(split[1]);
+                            filterColumn( $("[data_col=" + filter_columns[split[0]] + ']') );
+                        }
+                    }
+                }
+                    }
+
+                });
+
+                // Add listeners for filters
+                $('input.col_filter').on( 'keyup click', function() {
+                    filterColumn( this );
+                } );
+                $('#t01_wrapper').prepend('<div class="dataTables_filter"><label>Search:<input type="search" id="global_filter" aria-controls="t01"> </label></div>');
+                $('#global_filter').on( 'keyup click', function() {
+                    filterGlobal();
+                } );
+                $('#alpha_filter').on( 'change', function() {
+                    filterColumn( this );
+				} );
+				$('#mindist_filter').on( 'change', function() {
+                    filterColumn( this );
+				} );
+
+				// Format export buttons into one dropdown menu
+				$('.dt-buttons').addClass('dropdown');
+				$('.dt-buttons').prepend('<button class="dropbutton"> EXPORT </button>');
+				$('.dt-button').wrapAll('<div class="menu-content">');
+				$('.dt-buttons .menu-content').append('<a href="javascript:ExportURLBtn()">Permalink</a>');
+				$('.dt-button').removeClass('dt-button');
+
+
+
+
+
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            $(window).load(function() {
+                    $(".loader").fadeOut("slow");
+                    });
+        </script>
+
+</head>
+
+            <body>
+                <div id='inner_frame'>
+                    <div id="header">
+                        <div class="dropdown" >
+                            <button class="dropbutton"> MENU <!--<i ="fa fa-bars"></i>!--> </button>
+                            <div class="menu-content">
+                                <p><a href="home.html">Home</a> </p>
+                                <p><a href="compound_table.html" target="_blank">Compound Table</a></p>
+                                <p> <a href="mediator_table.html" target="_blank">Mediator Table</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="title">
+                        <h3>
+                            Mediators identified by EDDY for CTRP compounds
+                        </h3>
+                    </div>
+
+                    <!--Div for loading icon -->
+                    <div class="loader">
+                    </div>
+
+                    <table border="1" style="width:100%" id="t01"></tr>
+
+                    <thead>
+                        <tr> <!-- Column titles !-->
+                            <th>No.</th>
+                            <th>Drug Name</th>
+                            <th>Broad ID</th>
+                            <th>Intended Target</th>
+                            <th style='width:5%'>Protein Target</th>
+                            <th>Pathway</th>
+                            <th>P-Value</th>
+                            <th>Mediator</th>
+                            <th>Type</th>
+                            <th>DDN</th>
+                            <th>Ev Net</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tfoot> <!-- Use footer as column filter cells !-->
+                        <tr><th>No</th>
+                            <th>Drug Name</th>
+                            <th>Broad ID</th>
+                            <th>Intended Target</th>
+                            <th style='width:5%'>Protein Target</th>
+                            <th>Pathway</th>
+                            <th id='alpha_filter_footer'>Alpha (rounded to the 0.01)</th>
+                            <th>Mediator</th>
+                            <th>Type</th>
+                            <th class="hide">DDN</th>
+                            <th style='width:2%' id='mindist_filter_footer'></th>
+                            <th class="hide"></th>
+                        </tr>
+                    </tfoot>
+
+                </table>
+                </div >
+
+
+
+                <br/>
+                <div id="footer">
+                    <img src="res/img/CSLogo_nobg.png" alt="Image" style="height:30px;hspace:100">
+                    <img src="res/img/TGen_Color_LOGO_type_medium.png" alt="Image" style="height:30px;hspace:100">
+                    <img src="res/img/ctd2_nobg.png" alt="Image" style="height:30px;hspace:100"></br>
+                    <small>&nbsp &copy 2016 <a id=b href="http://tgen.org" target="_blank">The Translational Genomics Research Institute</a> &nbsp </small>
+                </div>
+            </body>
+
+            <br/>
+        </html>
