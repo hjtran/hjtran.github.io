@@ -1,0 +1,204 @@
+{
+    "edges": [
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c002",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c003",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c004",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c005",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c006",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c007",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c008",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c009",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "c010",
+                "target": "g001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
+                "combined_score": "172",
+                "database": "0",
+                "experimental": "0",
+                "prediction": "0",
+                "source": "g001",
+                "target": "c001",
+                "textmining": "172",
+                "type": "chem-gene"
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "data": {
+                "entrez id": "6497",
+                "id": "g001",
+                "name": "CCNH",
+                "type": "mediator"
+            }
+        },
+        {
+            "data": {
+                "id": "c001",
+                "name": "emodin",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c002",
+                "name": "ethanolamine p.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c003",
+                "name": "arsenic trioxi.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c005",
+                "name": "Tris-HCl.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c006",
+                "name": "phosphate.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c007",
+                "name": "AdoHcy.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c008",
+                "name": "ribobenzimidaz.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c009",
+                "name": "paclitaxel.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c010",
+                "name": "oclacitinib.",
+                "type": "chemical"
+            }
+        },
+        {
+            "data": {
+                "id": "c004",
+                "name": "Sns-032",
+                "type": "chemical"
+            }
+        }
+    ]
+}
