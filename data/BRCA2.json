@@ -1033,10 +1033,7 @@
         {
             "data": {
                 "id": "cid053245473",
-                "name": [
-                    "cid053245473",
-                    "chemical"
-                ],
+                "name": "BRD8899",
                 "type": "chemical"
             }
         },
@@ -1046,16 +1043,6 @@
                 "id": "9606.ensp00000265335",
                 "name": "RAD50",
                 "type": "direct neighbor"
-            }
-        },
-        {
-            "data": {
-                "id": "cid100005279",
-                "name": [
-                    "cid100005279",
-                    "chemical"
-                ],
-                "type": "chemical"
             }
         },
         {
