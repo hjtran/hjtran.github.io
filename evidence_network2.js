@@ -654,7 +654,8 @@ $(function(){ // on dom ready
                         }
                 });
                 if (nodeDepths.length > 2){
-                    mediator = cy.elements('node[type="mediator"]').remove();
+                    //mediator = cy.elements('node[type="mediator"]').remove();
+                    mediator = cy.elements('node[type="mediator"]');
                     var totalY = Math.abs( cy.elements('node[type="chemical"]').position('y') - cy.elements('node[id="'+nodeDepths[nodeDepths.length-1][0]+'"]').position('y') );
                     var yDiff = cy.elements('node[type="chemical"]').position('y') - cy.elements('node[id="'+nodeDepths[1][0]+'"]').position('y');
                     yDiff = Math.abs( yDiff );
@@ -674,7 +675,7 @@ $(function(){ // on dom ready
                             }
                         }
                     }
-                mediator.restore();
+                //mediator.restore();
                 mediator.position('x',cy.elements('node[type="chemical"]').position('x'));
                 mediator.position('y',cy.elements('node[type="chemical"]').position('y')+totalY);
                 }
