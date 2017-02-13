@@ -3825,14 +3825,6 @@
         },
         {
             "data": {
-                "entrez id": "83990",
-                "id": "9606.ensp00000259008",
-                "name": "BRIP1",
-                "type": "gene"
-            }
-        },
-        {
-            "data": {
                 "entrez id": "65975",
                 "id": "9606.ensp00000320754",
                 "name": "STK33",

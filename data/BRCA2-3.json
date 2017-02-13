@@ -2,6 +2,261 @@
     "edges": [
         {
             "data": {
+                "coexpression": "0",
+                "combined_score": "997",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "569",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000266970",
+                "textmining": "938",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "969",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "569",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000363021",
+                "textmining": "345",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "597",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000371475",
+                "textmining": "597",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "996",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000278616",
+                "textmining": "965",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "948",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000265433",
+                "textmining": "503",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "829",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000351284",
+                "textmining": "829",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "780",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "574",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000368438",
+                "textmining": "506",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "725",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000206249",
+                "textmining": "725",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "71",
+                "combined_score": "227",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000406046",
+                "textmining": "203",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "974",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000265335",
+                "textmining": "754",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "112",
+                "combined_score": "222",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000229854",
+                "textmining": "160",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "971",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "569",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000254719",
+                "textmining": "384",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "563",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000227507",
+                "textmining": "563",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "499",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000244741",
+                "textmining": "499",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "681",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000365588",
+                "textmining": "681",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "999",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "913",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000418960",
+                "textmining": "943",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "984",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "564",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000369497",
+                "target": "9606.ensp00000269305",
+                "textmining": "964",
+                "type": "gene-mediator"
+            }
+        },
+        {
+            "data": {
                 "coexpression": "288",
                 "combined_score": "954",
                 "cooccurence": "0",
@@ -27,21 +282,6 @@
                 "source": "9606.ensp00000266970",
                 "target": "9606.ensp00000371475",
                 "textmining": "372",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "160",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000266970",
-                "target": "9606.ensp00000259008",
-                "textmining": "160",
                 "type": "gene-gene"
             }
         },
@@ -77,6 +317,21 @@
         },
         {
             "data": {
+                "coexpression": "0",
+                "combined_score": "313",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000266970",
+                "target": "9606.ensp00000265433",
+                "textmining": "313",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
                 "combined_score": "996",
                 "database": "800",
                 "experimental": "900",
@@ -85,21 +340,6 @@
                 "target": "9606.ensp00000266970",
                 "textmining": "846",
                 "type": "chem-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "498",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "71",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000266970",
-                "target": "9606.ensp00000265335",
-                "textmining": "482",
-                "type": "gene-mediator"
             }
         },
         {
@@ -164,16 +404,16 @@
         },
         {
             "data": {
-                "coexpression": "65",
-                "combined_score": "991",
+                "coexpression": "0",
+                "combined_score": "498",
                 "cooccurence": "0",
-                "database": "900",
-                "experimental": "757",
+                "database": "0",
+                "experimental": "71",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000266970",
-                "target": "9606.ensp00000343741",
-                "textmining": "655",
+                "target": "9606.ensp00000265335",
+                "textmining": "482",
                 "type": "gene-gene"
             }
         },
@@ -300,21 +540,6 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "276",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000363021",
-                "target": "9606.ensp00000259008",
-                "textmining": "276",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
                 "combined_score": "999",
                 "cooccurence": "0",
                 "database": "900",
@@ -330,16 +555,16 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "956",
+                "combined_score": "920",
                 "cooccurence": "0",
                 "database": "900",
                 "experimental": "95",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000363021",
-                "target": "9606.ensp00000265335",
-                "textmining": "562",
-                "type": "gene-mediator"
+                "target": "9606.ensp00000265433",
+                "textmining": "197",
+                "type": "gene-gene"
             }
         },
         {
@@ -390,15 +615,15 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "998",
+                "combined_score": "956",
                 "cooccurence": "0",
                 "database": "900",
-                "experimental": "927",
+                "experimental": "95",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000363021",
-                "target": "9606.ensp00000343741",
-                "textmining": "830",
+                "target": "9606.ensp00000265335",
+                "textmining": "562",
                 "type": "gene-gene"
             }
         },
@@ -510,21 +735,6 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "313",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000371475",
-                "target": "9606.ensp00000259008",
-                "textmining": "313",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
                 "combined_score": "999",
                 "cooccurence": "0",
                 "database": "900",
@@ -539,17 +749,17 @@
         },
         {
             "data": {
-                "coexpression": "111",
-                "combined_score": "985",
+                "coexpression": "0",
+                "combined_score": "946",
                 "cooccurence": "0",
                 "database": "900",
-                "experimental": "359",
+                "experimental": "149",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000371475",
-                "target": "9606.ensp00000265335",
-                "textmining": "779",
-                "type": "gene-mediator"
+                "target": "9606.ensp00000265433",
+                "textmining": "417",
+                "type": "gene-gene"
             }
         },
         {
@@ -614,16 +824,16 @@
         },
         {
             "data": {
-                "coexpression": "0",
-                "combined_score": "993",
+                "coexpression": "111",
+                "combined_score": "985",
                 "cooccurence": "0",
-                "database": "0",
-                "experimental": "945",
+                "database": "900",
+                "experimental": "359",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000371475",
-                "target": "9606.ensp00000343741",
-                "textmining": "882",
+                "target": "9606.ensp00000265335",
+                "textmining": "779",
                 "type": "gene-gene"
             }
         },
@@ -735,171 +945,6 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "578",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "167",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000278616",
-                "textmining": "515",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "69",
-                "combined_score": "641",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "198",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000265335",
-                "textmining": "557",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "519",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "306",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000351284",
-                "textmining": "335",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "70",
-                "combined_score": "588",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "246",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000368438",
-                "textmining": "460",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "84",
-                "combined_score": "940",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "111",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000406046",
-                "textmining": "360",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "73",
-                "combined_score": "422",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000343741",
-                "textmining": "402",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "112",
-                "combined_score": "234",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "149",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000229854",
-                "textmining": "68",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "931",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "812",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000254719",
-                "textmining": "650",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "358",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000365588",
-                "textmining": "358",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "999",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "999",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000418960",
-                "textmining": "720",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "329",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000259008",
-                "target": "9606.ensp00000269305",
-                "textmining": "329",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
                 "combined_score": "257",
                 "cooccurence": "0",
                 "database": "0",
@@ -926,6 +971,18 @@
         },
         {
             "data": {
+                "combined_score": "800",
+                "database": "0",
+                "experimental": "800",
+                "prediction": "0",
+                "source": "cid053245473",
+                "target": "9606.ensp00000320754",
+                "textmining": "0",
+                "type": "chem-gene"
+            }
+        },
+        {
+            "data": {
                 "coexpression": "0",
                 "combined_score": "301",
                 "cooccurence": "0",
@@ -936,34 +993,7 @@
                 "source": "9606.ensp00000320754",
                 "target": "9606.ensp00000265335",
                 "textmining": "0",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "191",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "126",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000320754",
-                "target": "9606.ensp00000343741",
-                "textmining": "112",
                 "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "combined_score": "800",
-                "database": "0",
-                "experimental": "800",
-                "prediction": "0",
-                "source": "cid053245473",
-                "target": "9606.ensp00000320754",
-                "textmining": "0",
-                "type": "chem-gene"
             }
         },
         {
@@ -983,6 +1013,21 @@
         },
         {
             "data": {
+                "coexpression": "0",
+                "combined_score": "999",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "979",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000278616",
+                "target": "9606.ensp00000265433",
+                "textmining": "953",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
                 "combined_score": "239",
                 "database": "0",
                 "experimental": "0",
@@ -991,21 +1036,6 @@
                 "target": "9606.ensp00000278616",
                 "textmining": "239",
                 "type": "chem-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "111",
-                "combined_score": "998",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "333",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000278616",
-                "target": "9606.ensp00000265335",
-                "textmining": "980",
-                "type": "gene-mediator"
             }
         },
         {
@@ -1070,16 +1100,16 @@
         },
         {
             "data": {
-                "coexpression": "0",
-                "combined_score": "999",
+                "coexpression": "111",
+                "combined_score": "998",
                 "cooccurence": "0",
                 "database": "900",
-                "experimental": "990",
+                "experimental": "333",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000278616",
-                "target": "9606.ensp00000343741",
-                "textmining": "342",
+                "target": "9606.ensp00000265335",
+                "textmining": "980",
                 "type": "gene-gene"
             }
         },
@@ -1190,6 +1220,156 @@
         },
         {
             "data": {
+                "coexpression": "0",
+                "combined_score": "392",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000351284",
+                "textmining": "392",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "340",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "101",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000368438",
+                "textmining": "297",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "252",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000206249",
+                "textmining": "252",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "113",
+                "combined_score": "999",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "999",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000265335",
+                "textmining": "978",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "908",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "95",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000254719",
+                "textmining": "73",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "158",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000227507",
+                "textmining": "158",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "207",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000244741",
+                "textmining": "207",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "737",
+                "cooccurence": "0",
+                "database": "0",
+                "experimental": "495",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000365588",
+                "textmining": "501",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "998",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "972",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000418960",
+                "textmining": "623",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "945",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "0",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265433",
+                "target": "9606.ensp00000269305",
+                "textmining": "480",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
                 "combined_score": "192",
                 "database": "0",
                 "experimental": "0",
@@ -1227,186 +1407,6 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "997",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "953",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000351284",
-                "textmining": "940",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "821",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "363",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000368438",
-                "textmining": "730",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "264",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000206249",
-                "textmining": "264",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "138",
-                "combined_score": "752",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "315",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000406046",
-                "textmining": "614",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "113",
-                "combined_score": "966",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "796",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000343741",
-                "textmining": "827",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "71",
-                "combined_score": "395",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "149",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000229854",
-                "textmining": "297",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "75",
-                "combined_score": "968",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "420",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000254719",
-                "textmining": "481",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "264",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000227507",
-                "textmining": "264",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "407",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000244741",
-                "textmining": "407",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "909",
-                "cooccurence": "0",
-                "database": "0",
-                "experimental": "305",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000365588",
-                "textmining": "874",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "999",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "984",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000418960",
-                "textmining": "813",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "965",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "0",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000265335",
-                "target": "9606.ensp00000269305",
-                "textmining": "666",
-                "type": "gene-mediator"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
                 "combined_score": "987",
                 "cooccurence": "0",
                 "database": "0",
@@ -1437,15 +1437,15 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "992",
+                "combined_score": "997",
                 "cooccurence": "0",
                 "database": "0",
-                "experimental": "950",
+                "experimental": "953",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000351284",
-                "target": "9606.ensp00000343741",
-                "textmining": "857",
+                "target": "9606.ensp00000265335",
+                "textmining": "940",
                 "type": "gene-gene"
             }
         },
@@ -1571,16 +1571,16 @@
         },
         {
             "data": {
-                "coexpression": "65",
-                "combined_score": "806",
+                "coexpression": "0",
+                "combined_score": "821",
                 "cooccurence": "0",
                 "database": "0",
-                "experimental": "359",
+                "experimental": "363",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000368438",
-                "target": "9606.ensp00000343741",
-                "textmining": "703",
+                "target": "9606.ensp00000265335",
+                "textmining": "730",
                 "type": "gene-gene"
             }
         },
@@ -1692,15 +1692,15 @@
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "208",
+                "combined_score": "264",
                 "cooccurence": "0",
                 "database": "0",
                 "experimental": "0",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000206249",
-                "target": "9606.ensp00000343741",
-                "textmining": "208",
+                "target": "9606.ensp00000265335",
+                "textmining": "264",
                 "type": "gene-gene"
             }
         },
@@ -1796,16 +1796,16 @@
         },
         {
             "data": {
-                "coexpression": "81",
-                "combined_score": "717",
+                "coexpression": "138",
+                "combined_score": "752",
                 "cooccurence": "0",
                 "database": "0",
-                "experimental": "392",
+                "experimental": "315",
                 "fusion": "0",
                 "neighborhood": "0",
                 "source": "9606.ensp00000406046",
-                "target": "9606.ensp00000343741",
-                "textmining": "534",
+                "target": "9606.ensp00000265335",
+                "textmining": "614",
                 "type": "gene-gene"
             }
         },
@@ -1916,106 +1916,106 @@
         },
         {
             "data": {
-                "coexpression": "0",
-                "combined_score": "926",
+                "coexpression": "71",
+                "combined_score": "395",
                 "cooccurence": "0",
-                "database": "900",
-                "experimental": "92",
+                "database": "0",
+                "experimental": "149",
                 "fusion": "0",
                 "neighborhood": "0",
-                "source": "9606.ensp00000343741",
+                "source": "9606.ensp00000265335",
                 "target": "9606.ensp00000229854",
-                "textmining": "252",
+                "textmining": "297",
                 "type": "gene-gene"
             }
         },
         {
             "data": {
-                "coexpression": "81",
-                "combined_score": "999",
+                "coexpression": "75",
+                "combined_score": "968",
                 "cooccurence": "0",
                 "database": "900",
-                "experimental": "985",
+                "experimental": "420",
                 "fusion": "0",
                 "neighborhood": "0",
-                "source": "9606.ensp00000343741",
+                "source": "9606.ensp00000265335",
                 "target": "9606.ensp00000254719",
-                "textmining": "674",
+                "textmining": "481",
                 "type": "gene-gene"
             }
         },
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "263",
+                "combined_score": "264",
                 "cooccurence": "0",
                 "database": "0",
                 "experimental": "0",
                 "fusion": "0",
                 "neighborhood": "0",
-                "source": "9606.ensp00000343741",
+                "source": "9606.ensp00000265335",
                 "target": "9606.ensp00000227507",
-                "textmining": "263",
+                "textmining": "264",
                 "type": "gene-gene"
             }
         },
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "398",
+                "combined_score": "407",
                 "cooccurence": "0",
                 "database": "0",
                 "experimental": "0",
                 "fusion": "0",
                 "neighborhood": "0",
-                "source": "9606.ensp00000343741",
+                "source": "9606.ensp00000265335",
                 "target": "9606.ensp00000244741",
-                "textmining": "398",
+                "textmining": "407",
                 "type": "gene-gene"
             }
         },
         {
             "data": {
                 "coexpression": "0",
-                "combined_score": "851",
+                "combined_score": "909",
                 "cooccurence": "0",
                 "database": "0",
+                "experimental": "305",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265335",
+                "target": "9606.ensp00000365588",
+                "textmining": "874",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "999",
+                "cooccurence": "0",
+                "database": "900",
+                "experimental": "984",
+                "fusion": "0",
+                "neighborhood": "0",
+                "source": "9606.ensp00000265335",
+                "target": "9606.ensp00000418960",
+                "textmining": "813",
+                "type": "gene-gene"
+            }
+        },
+        {
+            "data": {
+                "coexpression": "0",
+                "combined_score": "965",
+                "cooccurence": "0",
+                "database": "900",
                 "experimental": "0",
                 "fusion": "0",
                 "neighborhood": "0",
-                "source": "9606.ensp00000343741",
-                "target": "9606.ensp00000365588",
-                "textmining": "851",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "999",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "992",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000343741",
-                "target": "9606.ensp00000418960",
-                "textmining": "582",
-                "type": "gene-gene"
-            }
-        },
-        {
-            "data": {
-                "coexpression": "0",
-                "combined_score": "999",
-                "cooccurence": "0",
-                "database": "900",
-                "experimental": "998",
-                "fusion": "0",
-                "neighborhood": "0",
-                "source": "9606.ensp00000343741",
+                "source": "9606.ensp00000265335",
                 "target": "9606.ensp00000269305",
-                "textmining": "583",
+                "textmining": "666",
                 "type": "gene-gene"
             }
         },
@@ -2293,6 +2293,14 @@
     "nodes": [
         {
             "data": {
+                "entrez id": "675",
+                "id": "9606.ensp00000369497",
+                "name": "BRCA2",
+                "type": "mediator"
+            }
+        },
+        {
+            "data": {
                 "entrez id": "1017",
                 "id": "9606.ensp00000266970",
                 "name": "CDK2",
@@ -2301,17 +2309,17 @@
         },
         {
             "data": {
-                "entrez id": "7158",
-                "id": "9606.ensp00000371475",
-                "name": "TP53BP1",
+                "entrez id": "6118",
+                "id": "9606.ensp00000363021",
+                "name": "RPA2",
                 "type": "gene"
             }
         },
         {
             "data": {
-                "entrez id": "83990",
-                "id": "9606.ensp00000259008",
-                "name": "BRIP1",
+                "entrez id": "7158",
+                "id": "9606.ensp00000371475",
+                "name": "TP53BP1",
                 "type": "gene"
             }
         },
@@ -2333,10 +2341,10 @@
         },
         {
             "data": {
-                "entrez id": "10111",
-                "id": "9606.ensp00000265335",
-                "name": "RAD50",
-                "type": "mediator"
+                "entrez id": "4683",
+                "id": "9606.ensp00000265433",
+                "name": "NBN",
+                "type": "direct neighbor"
             }
         },
         {
@@ -2373,25 +2381,33 @@
         },
         {
             "data": {
-                "entrez id": "545",
-                "id": "9606.ensp00000343741",
-                "name": "ATR",
-                "type": "gene"
+                "id": "cid053245473",
+                "name": "BRD8899",
+                "type": "chemical"
             }
         },
         {
             "data": {
-                "entrez id": "83990",
-                "id": "9606.ensp00000259008",
-                "name": "BRIP1",
+                "entrez id": "10111",
+                "id": "9606.ensp00000265335",
+                "name": "RAD50",
                 "type": "direct neighbor"
             }
         },
         {
             "data": {
-                "id": "cid053245473",
-                "name": "BRD8899",
-                "type": "chemical"
+                "entrez id": "10111",
+                "id": "9606.ensp00000265335",
+                "name": "RAD50",
+                "type": "gene"
+            }
+        },
+        {
+            "data": {
+                "entrez id": "4683",
+                "id": "9606.ensp00000265433",
+                "name": "NBN",
+                "type": "gene"
             }
         },
         {
