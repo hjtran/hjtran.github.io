@@ -3905,14 +3905,6 @@
         },
         {
             "data": {
-                "entrez id": "83990",
-                "id": "9606.ensp00000259008",
-                "name": "BRIP1",
-                "type": "direct neighbor"
-            }
-        },
-        {
-            "data": {
                 "entrez id": "4174",
                 "id": "9606.ensp00000216122",
                 "name": "MCM5",

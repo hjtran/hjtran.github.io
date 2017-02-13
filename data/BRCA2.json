@@ -2382,7 +2382,10 @@
         {
             "data": {
                 "id": "cid053245473",
-                "name": "BRD8899",
+                "name": [
+                    "cid053245473",
+                    "chemical"
+                ],
                 "type": "chemical"
             }
         },
