@@ -56,7 +56,7 @@ var trainLsSqr = function(data,basis){
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
-var axesDataMargin = {top: 0.5, right: 0.5, bottom: 0.5, left:0.5}
+var axesDataMargin = {top: 4.5, right: 0.5, bottom: 0.5, left:0.5}
 
 // create canvas
 var svg = d3.select('body').append('svg')
@@ -526,3 +526,29 @@ dataParams = dists[0];
 dataPanel.select('.funLinetoggle input').property('checked',true); // set checked by default
 updateData();
 updatePredLine();
+
+
+var legendEntries = [];
+legendEntries.push({text:'Predicted Distribution', color:'green'});
+legendEntries.push({text:'Actual Distribution', color:'black'});
+  // draw legend
+  var legend = svg.selectAll(".legend")
+      .data(legendEntries)
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  // draw legend colored rectangles
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", function(d){return d.color;});
+
+  // draw legend text
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d.text;})
