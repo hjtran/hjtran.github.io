@@ -9,6 +9,10 @@
     shape-rendering: crispEdges;
 }
 
+body {
+    width: 1000;
+}
+
 .dot {
     stroke: #000;
 }
