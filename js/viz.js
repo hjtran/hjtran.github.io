@@ -50,8 +50,7 @@ var trainLsSqr = function(data,basis){
 
 
 
-// Scatterplot 
-// Adapted from Michele Weigle's simple example: http://bl.ocks.org/weiglemc/6185069
+// Scatterplot Adapted from Michele Weigle's simple example: http://bl.ocks.org/weiglemc/6185069
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -65,9 +64,6 @@ var svg = d3.select('body').append('svg')
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-// Generate initial data and axes
-
-//var data = generateData(20,0,3,f1);
 // setup x
 var xValue = function(d) { return d.x; },
     xScale = d3.scale.linear().range([0, width]),
@@ -80,15 +76,10 @@ var yValue = function(d) { return d.y; },
     yMap = function(d) { return yScale(yValue(d));},
     yAxis = d3.svg.axis().scale(yScale).orient('left');
 
-// add buffer between axes and data
-//xScale.domain( [d3.min(data, xValue)-axesDataMargin.left, d3.max(data, xValue)+axesDataMargin.right] );
-//yScale.domain( [d3.min(data, yValue)-axesDataMargin.right, d3.max(data, yValue)+axesDataMargin.top] );
-
 // x-axis
 svg.append("g")
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + height + ")")
-	//.call(xAxis)
 .append("text")
 	.attr("class", "label")
 	.attr("x", width)
@@ -99,7 +90,6 @@ svg.append("g")
 // y-axis
 svg.append("g")
 	.attr("class", "y axis")
-	//.call(yAxis)
 .append("text")
 	.attr("class", "label")
 	.attr("transform", "rotate(-90)")
@@ -107,15 +97,6 @@ svg.append("g")
 	.attr("dy", ".71em")
 	.style("text-anchor", "end")
 	.text("Y");
-
-//var dots = svg.selectAll('.dot')
-    //.data(data)
-    //.enter().append('circle')
-    //.attr('class', 'dot')
-    //.attr('r', 3.5)
-    //.attr('cx', xMap)
-    //.attr('cy', yMap)
-    //.style('fill', 'dodgerblue');
 
 // Line plot
 var line = d3.svg.line()
@@ -186,6 +167,7 @@ var updateData = function (){
             svg.selectAll('.dot').remove().transition(700).style('opacity',0).remove()
             var dots = svg.selectAll('.dot').data(data)
 
+            // plot points
             dots.enter().append('circle')
                 .attr('class', 'dot')
                 .attr('r', 3.5)
@@ -231,6 +213,7 @@ var updateData = function (){
             svg.selectAll('.dot').remove().transition(700).style('opacity',0).remove()
             var dots = svg.selectAll('.dot').data(data)
 
+            // plot points
             dots.enter().append('circle')
                 .attr('class', 'dot')
                 .attr('r', 3.5)
