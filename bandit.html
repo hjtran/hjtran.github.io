@@ -1,0 +1,58 @@
+
+<head>
+    <!-- STYLESHEET IMPORTS !-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <!-- Latest compiled and minified CSS for boostrap-select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <!-- custom css !-->
+    <link rel='stylesheet' type='text/css' href='css/leastsqr.css'>
+    <!-- font awesome --!>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
+
+    <!-- LIB IMPORTS !--> 
+    <!-- import d3 for visualizations !-->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- Load jStat for sampling distributions !-->
+    <script src='https://cdn.jsdelivr.net/jstat/latest/jstat.min.js'></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript for BootStrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Deque by Petka Antonov !-->
+    <script src='js/lib/deque.js'></script>
+
+</head>
+<html>
+    <body>
+    <!-- Main script that generates the visualizations !-->
+    <script src='js/bandit.js'></script>
+
+<!-- By Dzulfikar Adi Putra's codepen !-->
+<div class="container">
+  <hr/>
+  <div class="player text-center">
+    <button type="button" id="button" class="btn-primary" onclick='showButtonPress()'>
+        <text id='showButtonText'>Show Mean</text>
+    </button>
+    
+    <button type="button" id="button_bw" class="btn" onclick='buttonBackPress()'>
+      <i class="fa fa-backward"></i>
+    </button>
+    
+    <button type="button" id="button_play" class="btn" onclick='buttonPlayPress()'>
+      <i class="fa fa-play"></i>
+    </button>
+    
+    <button type="button" id="button_stop" class="btn" onclick='buttonStopPress()'>
+      <i class="fa fa-pause"></i>
+    </button>
+    
+    <button type="button" id="button_fw" class="btn" onclick='buttonForwardPress()'>
+      <i class="fa fa-forward"></i>
+    </button>
+    
+  </div>
+</div>
+    </body>
+</html>
