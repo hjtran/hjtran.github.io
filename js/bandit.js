@@ -226,7 +226,7 @@ svg.append("g")
 svg.append("g")
 	.attr("class", "y axis")
 .append("text")
-	.attr("class", "label")
+	.attr("class", "label mainYLabel")
 	.attr("transform", "rotate(-90)")
 	.attr("y", 6)
 	.attr("dy", ".71em")
@@ -242,34 +242,69 @@ var line = d3.svg.line()
 
 var data = {
     payoffs:[[0],[0],[0],[0]],
+    regrets:[[0],[0],[0],[0]],
     t:[0],
     tmax:100,
-    pmax:10000
+    pmax:10000,
+    rmax:10000,
 };
 var p0 = svg.append('path')
     .datum(data.payoffs[0])
-    .attr('class','line')
+    .attr('class','line reward')
 	.attr('fill','none')
 	.style('stroke','blue')
 	.attr('stroke-width',2)
+    .attr('opacity',1)
 var p1 = svg.append('path')
     .datum(data.payoffs[1])
-    .attr('class','line')
+    .attr('class','line reward')
 	.attr('fill','none')
 	.style('stroke','green')
 	.attr('stroke-width',2)
+    .attr('opacity',1)
 var p2 = svg.append('path')
     .datum(data.payoffs[2])
-    .attr('class','line')
+    .attr('class','line reward')
 	.attr('fill','none')
 	.style('stroke','red')
 	.attr('stroke-width',2)
+    .attr('opacity',1)
 var p3 = svg.append('path')
     .datum(data.payoffs[3])
-    .attr('class','line')
+    .attr('class','line reward')
 	.attr('fill','none')
 	.style('stroke','orange')
 	.attr('stroke-width',2)
+    .attr('opacity',1)
+
+var r0 = svg.append('path')
+    .datum(data.regrets[0])
+    .attr('class','line regret')
+	.attr('fill','none')
+	.style('stroke','blue')
+	.attr('stroke-width',2)
+    .attr('opacity',0)
+var r1 = svg.append('path')
+    .datum(data.regrets[1])
+    .attr('class','line regret')
+	.attr('fill','none')
+	.style('stroke','green')
+	.attr('stroke-width',2)
+    .attr('opacity',0)
+var r2 = svg.append('path')
+    .datum(data.regrets[2])
+    .attr('class','line regret')
+	.attr('fill','none')
+	.style('stroke','red')
+	.attr('stroke-width',2)
+    .attr('opacity',0)
+var r3 = svg.append('path')
+    .datum(data.regrets[3])
+    .attr('class','line regret')
+	.attr('fill','none')
+	.style('stroke','orange')
+	.attr('stroke-width',2)
+    .attr('opacity',0)
 yScale.domain( [0, data.pmax] );
 xScale.domain( [0, data.tmax] );
 // y-axis
@@ -285,28 +320,55 @@ svg.select('g.x.axis')
     
 var inTransition = false;
 var updateData = function (){
-    svg.selectAll('.line').attr('d',line);
-    if (data.pmax < data.payoffs[0][data.payoffs[0].length-1] ||
-        data.pmax < data.payoffs[1][data.payoffs[1].length-1] ||
-        data.pmax < data.payoffs[2][data.payoffs[2].length-1] ||
-        data.tmax < data.payoffs[0].length) {
-        data.pmax *= 2;
-        yScale.domain( [0, data.pmax] );
-        // y-axis
-        svg.select('g.y.axis')
-            .transition()
-            .duration(500)
-            .call(yAxis)
-        data.tmax *= 2;
-        xScale.domain( [0, data.tmax] );
-        // x-axis
-        svg.select('g.x.axis')
-            .transition()
-            .duration(500)
-            .call(xAxis)
-        inTransition = true;
-        svg.selectAll('.line').transition().duration(500).attr('d',line);
-        setTimeout(function(){inTransition=false;},500);
+    if (mode == 'reward'){
+        svg.selectAll('.line').attr('d',line);
+        if (data.pmax < data.payoffs[0][data.payoffs[0].length-1] ||
+            data.pmax < data.payoffs[1][data.payoffs[1].length-1] ||
+            data.pmax < data.payoffs[2][data.payoffs[2].length-1] ||
+            data.tmax < data.payoffs[0].length) {
+            data.pmax *= 2;
+            yScale.domain( [0, data.pmax] );
+            // y-axis
+            svg.select('g.y.axis')
+                .transition()
+                .duration(500)
+                .call(yAxis)
+            data.tmax *= 2;
+            xScale.domain( [0, data.tmax] );
+            // x-axis
+            svg.select('g.x.axis')
+                .transition()
+                .duration(500)
+                .call(xAxis)
+            inTransition = true;
+            svg.selectAll('.line.reward').transition().duration(500).attr('d',line);
+            setTimeout(function(){inTransition=false;},500);
+        }
+    } else if (mode == 'regret'){
+        svg.selectAll('.line').attr('d',line);
+        if (data.rmax < data.regrets[0][data.regrets[0].length-1] ||
+            data.rmax < data.regrets[1][data.regrets[1].length-1] ||
+            data.rmax < data.regrets[2][data.regrets[2].length-1] ||
+            data.tmax < data.regrets[0].length) {
+            data.rmax *= 2;
+            yScale.domain( [0, data.rmax] );
+            // y-axis
+            svg.select('g.y.axis')
+                .transition()
+                .duration(500)
+                .call(yAxis)
+            data.tmax *= 2;
+            xScale.domain( [0, data.tmax] );
+            // x-axis
+            svg.select('g.x.axis')
+                .transition()
+                .duration(500)
+                .call(xAxis)
+            inTransition = true;
+            svg.selectAll('.line.regret').transition().duration(500).attr('d',line);
+            setTimeout(function(){inTransition=false;},500);
+        }
+
     }
 }
 
@@ -319,9 +381,10 @@ var e = new epsilonGreedyStrategy(vizParams.mus,sampleBetaFixedAlpha,0.1);
 var lastActions = new Deque([]);
 var actionFreqs = [0,0,0,0,0];
 
+var mode = 'reward';
 // TODO: rename
 var loop = function() {
-    if (!inTransition && playStatus == 'play'){
+    if (!inTransition && playStatus == 'play' ){
         updateData();
         var ret = u.getNextAction();
         data.payoffs[0].push(data.payoffs[0][data.payoffs[0].length-1]+ret.reward*100);
@@ -343,8 +406,12 @@ var loop = function() {
         data.payoffs[2].push(data.payoffs[2][data.payoffs[2].length-1]+ret.reward*100);
         var ret = e.getNextAction();
         data.payoffs[3].push(data.payoffs[3][data.payoffs[3].length-1]+ret.reward*100);
+        var t = data.payoffs[0].length-1;
+        for (var i = 0; i < data.regrets.length; i++) {
+            data.regrets[i].push(data.payoffs[1][t]-data.payoffs[i][t]);
+        }
 
-    }
+    } 
     if (playStatus == 'play') {
         setTimeout(loop,speed);
     }
@@ -435,6 +502,32 @@ showButtonPress = function() {
             .text(function(d) { return (d*100).toString(); })
             .style('opacity',1);
         d3.select('#showButtonText').text('Hide Means');
+    }
+}
+
+var modeButtonPress = function() {
+    if (mode == 'reward') {
+        mode = 'regret';
+        d3.selectAll('.line.reward')
+            .transition()
+            .duration(300)
+            .attr('opacity',0);
+        d3.selectAll('.line.regret')
+            .transition()
+            .duration(300)
+            .attr('opacity',1);
+        d3.select('.mainYLabel').text('Cum. Regret');
+    } else {
+        mode = 'reward';
+        d3.selectAll('.line.reward')
+            .transition()
+            .duration(300)
+            .attr('opacity',1);
+        d3.selectAll('.line.regret')
+            .transition()
+            .duration(300)
+            .attr('opacity',0);
+        d3.select('.mainYLabel').text('Cum. Reward');
     }
 }
 
